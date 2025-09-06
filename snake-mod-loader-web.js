@@ -525,7 +525,9 @@ let addModSelectorPopup = function() {
   }
   `;
 
-  document.getElementsByTagName('style')[0].innerHTML = document.getElementsByTagName('style')[0].innerHTML + css;
+  let styleElement = document.createElement('style');
+  styleElement.innerHTML = css;
+  document.head.appendChild(styleElement);
 
   let mobileCloseButton = '';
   if(window.isSnakeMobileVersion) {
