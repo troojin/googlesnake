@@ -1557,7 +1557,7 @@ function attemptRenderGameVersionOptions(selectedMod, initial = false) {
 
       //Strip out version numbers that are too high
       versionsArray = versionsArray.filter(v=>v<=webLatestVersion);
-      versionsArray = versionsArray.sort();
+      versionsArray = versionsArray.sort((a,b)=>a-b);
     }
   }
 
