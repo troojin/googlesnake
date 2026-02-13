@@ -8,44 +8,13 @@
 </head>
 
 <body>
-  <header class="topbar">
-    <a class="brand" href="/">
-      <span class="brand-dot"></span>
-      <span class="brand-text">Snake Mod</span>
-    </a>
-
-    <nav class="nav">
-      <a class="wide-only" href="about.html">About</a>
-      <a class="wide-only" href="https://discord.gg/NA6vHg62An">Discord</a>
-
-      <div class="thin-dropdown">
-        <button class="menu-btn" type="button" aria-label="Open menu">☰</button>
-        <div class="dropdown-content">
-          <a href="about.html">About</a>
-          <a href="https://discord.gg/NA6vHg62An">Discord</a>
-          <a href="v/current/">Play</a>
-        </div>
-      </div>
-
-      <a class="button-29 nav-cta" href="v/current/">Play</a>
-    </nav>
-  </header>
-
   <main class="container">
     <h1 class="title-gradient">Google Snake Mod</h1>
-    <p class="subtitle">Play the mod in your browser. No installs.</p>
+    <p class="subtitle">
+      Play the mod in your browser. No installs.
+    </p>
 
     <a class="button-29" href="v/current/">PLAY</a>
   </main>
-
-  <script>
-    const dd = document.querySelector(".thin-dropdown");
-    const btn = document.querySelector(".menu-btn");
-    btn?.addEventListener("click", (e) => {
-      e.stopPropagation();
-      dd.classList.toggle("open");
-    });
-    document.addEventListener("click", () => dd?.classList.remove("open"));
-  </script>
 </body>
 </html>
