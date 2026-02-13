@@ -1,34 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An easy way to play Google Snake with mods - no extensions or bookmarks required! Now works on mobile as well. No ads, no nonsense."></head>
-  <title>Google Snake Mods</title>
-  <link rel="icon" type="image/png" href="/img/snake_logo.png">
-  <link href="//fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake Mod • Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <div style="flex-grow: 1"><a href="v/current/">Play modded snake</a></div>
-    <div class="wide-only"><a href="about.html">About</a></div>
-    <div class="wide-only"><a href="https://discord.gg/NA6vHg62An">Discord</a></div>
-    <div class="wide-only"><a href="https://stats.googlesnakemods.com/">SnakeStats</a></div>
-    <div class="thin-dropdown">
-      <span style="color: aqua; font-family: Roboto, Arial, sans-serif; text-decoration: underline; user-select:none; padding-left:15px">Links</span>
-      <div class="dropdown-content">
-        <div><a href="about.html">About</a></div>
-        <div><a href="https://discord.gg/NA6vHg62An">Discord</a></div>
-        <div><a href="https://stats.googlesnakemods.com/">SnakeStats</a></div>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-dot"></span>
+      <span class="brand-text">Snake Mod</span>
+    </a>
+
+    <nav class="nav">
+      <a class="wide-only" href="#features">Features</a>
+      <a class="wide-only" href="#install">Install</a>
+      <a class="wide-only" href="#faq">FAQ</a>
+
+      <!-- Mobile dropdown -->
+      <div class="thin-dropdown">
+        <button class="menu-btn button-ghost" type="button" aria-label="Open menu">
+          ☰
+        </button>
+        <div class="dropdown-content" role="menu" aria-label="Menu">
+          <a href="#features" role="menuitem">Features</a>
+          <a href="#install" role="menuitem">Install</a>
+          <a href="#faq" role="menuitem">FAQ</a>
+          <a href="#download" role="menuitem">Download</a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <h1>Google Snake with Mods</h1>
-  <p>
-    This site is run by <a href="https://github.com/DarkSnakeGang">DarkSnakeGang</a>, a group of dedicated modders responsible for all of the popular Google Snake mods. 
-    We made this site as an easier way to play the Snake mods without needing to download anything. It is also the only way to play Google Snake Mods on mobile.
-  </p>
-  <a class="button-29 fake-button" href="v/current/">PLAY</a>
+
+      <a class="button-29 nav-cta" href="#download">Download</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <h1 class="title-gradient">Google Snake Mod</h1>
+        <p class="subtitle">
+          A clean, fast homepage for your mod. Simple install, solid UI, mobile-friendly.
+        </p>
+
+        <div class="hero-actions" id="download">
+          <a class="button-29" href="#" download>Download</a>
+          <a class="button-ghost" href="#install">How to install</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Chrome</span>
+          <span class="chip">Edge</span>
+          <span class="chip">No ads</span>
+          <span class="chip">Open-source (optional)</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="preview-card">
+          <div class="preview-top">
+            <span class="pill">NEW</span>
+            <span class="muted">v1.0</span>
+          </div>
+          <div class="preview-body">
+            <div class="fake-window">
+              <div class="dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="fake-content">
+                <div class="bar"></div>
+                <div class="bar small"></div>
+                <div class="grid">
+                  <div class="tile"></div>
+                  <div class="tile"></div>
+                  <div class="tile"></div>
+                  <div class="tile"></div>
+                </div>
+              </div>
+            </div>
+            <p class="muted small">
+              Put a screenshot / gif here later (or keep this placeholder).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <h2>Features</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Clean UI</h3>
+          <p>Dark theme, smooth spacing, and readable layout.</p>
+        </article>
+        <article class="card">
+          <h3>Fast Setup</h3>
+          <p>Clear install steps that don’t confuse people.</p>
+        </article>
+        <article class="card">
+          <h3>Mobile Ready</h3>
+          <p>Dropdown menu + responsive sections.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="install">
+      <h2>Install</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Download the mod</h3>
+            <p>Grab the latest release from the button above.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Load unpacked (Chrome/Edge)</h3>
+            <p>
+              Go to <span class="code">chrome://extensions</span> → enable Developer Mode →
+              <b>Load unpacked</b> → select the mod folder.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Play</h3>
+            <p>Open Google Snake and enjoy the changes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="callout-icon">⚡</div>
+        <div>
+          <b>Tip:</b> If you want, add a “Changelog” section later — it boosts trust.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <h2>FAQ</h2>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Is this safe?</summary>
+          <p>Explain what your mod does and what permissions it needs (keep it honest + short).</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does it work on school Chromebooks?</summary>
+          <p>If extensions are locked by admin, it usually won’t. Otherwise, yes.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I customize it?</summary>
+          <p>Yes — you can add settings, themes, or presets.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <span class="muted">© <span id="year"></span> Snake Mod</span>
+      </div>
+      <div class="footer-right">
+        <a href="#home">Top</a>
+        <a href="#">Discord</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Make the mobile dropdown work on click (not just hover)
+    const dropdown = document.querySelector(".thin-dropdown");
+    const btn = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".dropdown-content");
+
+    btn?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", () => dropdown?.classList.remove("open"));
+  </script>
 </body>
 </html>
