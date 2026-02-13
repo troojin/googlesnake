@@ -6,11 +6,12 @@
 }
 
 *{ box-sizing:border-box; }
+
 body{
   margin:0;
   font-family: Roboto, Arial, sans-serif;
   color:var(--text);
-  background:#0b0b10;
+  background:var(--bg);
 }
 
 /* topbar */
@@ -44,16 +45,26 @@ body{
 a{ color:aqua; text-decoration:none; }
 a:hover{ text-decoration:underline; }
 
+/* ✅ center the page content */
 .container{
-  max-width:900px;
-  margin:0 auto;
-  padding:40px 18px;
+  min-height: calc(100vh - 60px); /* subtracts topbar height-ish */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
+
+  max-width: 720px;
+  margin:0 auto;
+  padding: 28px 18px;
 }
 
+/* ✅ less "AI-perfect" sizing */
 .title-gradient{
-  margin:0 0 10px;
-  font-size:3rem;
+  margin:0 0 8px;
+  font-size: clamp(2.2rem, 5vw, 3.1rem);
+  letter-spacing: -0.5px;
+
   background: linear-gradient(45deg, #4774ea, #00fffb 80%);
   -webkit-background-clip:text;
   background-clip:text;
@@ -61,8 +72,10 @@ a:hover{ text-decoration:underline; }
 }
 
 .subtitle{
-  margin:0 0 22px;
+  margin:0 0 18px;
   color:var(--muted);
+  max-width: 48ch;
+  line-height: 1.45;
 }
 
 /* dropdown */
@@ -89,32 +102,38 @@ a:hover{ text-decoration:underline; }
 .dropdown-content a{ display:block; padding:6px 4px; }
 .thin-dropdown.open .dropdown-content{ display:block; }
 
-/* your button-29 */
+/* button */
 .button-29{
   align-items:center;
   appearance:none;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
   border:0;
   border-radius:10px;
-  box-shadow: rgba(45,35,66,.4) 0 2px 4px,
-              rgba(45,35,66,.3) 0 7px 13px -3px,
-              rgba(58,65,111,.5) 0 -3px 0 inset;
+  box-shadow: rgba(45,35,66,.35) 0 2px 4px,
+              rgba(45,35,66,.28) 0 7px 13px -3px,
+              rgba(58,65,111,.45) 0 -3px 0 inset;
   color:#fff;
   cursor:pointer;
   display:inline-flex;
   height:48px;
   justify-content:center;
-  padding:0 18px;
+  padding:0 22px;
   text-decoration:none;
   transition: transform .15s;
   white-space:nowrap;
   font-size:18px;
 }
-.button-29:hover{ transform: translateY(-2px); text-decoration:none; }
-.button-29:active{ transform: translateY(2px); }
+.button-29:hover{ transform: translateY(-1px); text-decoration:none; }
+.button-29:active{ transform: translateY(1px); }
 
 @media (max-width:550px){
   .wide-only{ display:none; }
   .thin-dropdown{ display:block; }
   .nav-cta{ display:none; }
+
+  .container{
+    min-height: calc(100vh - 58px);
+    padding-top: 24px;
+    padding-bottom: 34px;
+  }
 }
