@@ -9,171 +9,43 @@
 
 <body>
   <header class="topbar">
-    <a class="brand" href="#home">
+    <a class="brand" href="/">
       <span class="brand-dot"></span>
       <span class="brand-text">Snake Mod</span>
     </a>
 
     <nav class="nav">
-      <a class="wide-only" href="#how">How it works</a>
-      <a class="wide-only" href="#controls">Controls</a>
-      <a class="wide-only" href="#faq">FAQ</a>
+      <a class="wide-only" href="about.html">About</a>
+      <a class="wide-only" href="https://discord.gg/NA6vHg62An">Discord</a>
 
       <div class="thin-dropdown">
-        <button class="menu-btn button-ghost" type="button" aria-label="Open menu">☰</button>
-        <div class="dropdown-content" role="menu" aria-label="Menu">
-          <a href="#how" role="menuitem">How it works</a>
-          <a href="#controls" role="menuitem">Controls</a>
-          <a href="#faq" role="menuitem">FAQ</a>
-          <a href="#play" role="menuitem">Play</a>
+        <button class="menu-btn" type="button" aria-label="Open menu">☰</button>
+        <div class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="https://discord.gg/NA6vHg62An">Discord</a>
+          <a href="v/current/">Play</a>
         </div>
       </div>
 
-      <!-- set href to your actual play URL -->
-      <a class="button-29 nav-cta" href="play.html" id="play">Play</a>
+      <a class="button-29 nav-cta" href="v/current/">Play</a>
     </nav>
   </header>
 
-  <main class="container" id="home">
-    <section class="hero">
-      <div class="hero-left">
-        <h1 class="title-gradient">Google Snake Mod</h1>
-        <p class="subtitle">
-          Play the mod straight in your browser — no installs, no extension.
-        </p>
+  <main class="container">
+    <h1 class="title-gradient">Google Snake Mod</h1>
+    <p class="subtitle">Play the mod in your browser. No installs.</p>
 
-        <div class="hero-actions">
-          <!-- set href to your actual play URL -->
-          <a class="button-29" href="v/current/">Play now</a>
-          <a class="button-ghost" href="#how">How it works</a>
-        </div>
-
-        <div class="chips">
-          <span class="chip">Web-based</span>
-          <span class="chip">Fast load</span>
-          <span class="chip">Mobile-friendly</span>
-          <span class="chip">No downloads</span>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="preview-card">
-          <div class="preview-top">
-            <span class="pill">LIVE</span>
-            <span class="muted">Web build</span>
-          </div>
-
-          <div class="preview-body">
-            <div class="fake-window">
-              <div class="dots"><span></span><span></span><span></span></div>
-              <div class="fake-content">
-                <div class="bar"></div>
-                <div class="bar small"></div>
-                <div class="grid">
-                  <div class="tile"></div>
-                  <div class="tile"></div>
-                  <div class="tile"></div>
-                  <div class="tile"></div>
-                </div>
-              </div>
-            </div>
-
-            <p class="muted small">
-              Replace this with a screenshot/gif of your mod when you have it.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="how">
-      <h2>How it works</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Open & play</h3>
-          <p>Click Play and the mod loads as a normal web page.</p>
-        </article>
-        <article class="card">
-          <h3>Runs client-side</h3>
-          <p>No installer — it’s just HTML/CSS/JS in the browser.</p>
-        </article>
-        <article class="card">
-          <h3>Shareable link</h3>
-          <p>Send the URL to friends and play instantly.</p>
-        </article>
-      </div>
-
-      <div class="callout">
-        <div class="callout-icon">⚡</div>
-        <div>
-          <b>Best practice:</b> host on HTTPS so everything works cleanly.
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="controls">
-      <h2>Controls</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">⌨</div>
-          <div class="step-body">
-            <h3>Keyboard</h3>
-            <p>Arrow keys / WASD. (Put your real controls here.)</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-num">📱</div>
-          <div class="step-body">
-            <h3>Mobile</h3>
-            <p>Swipe controls (or on-screen arrows) if you support them.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-num">⚙</div>
-          <div class="step-body">
-            <h3>Mod settings</h3>
-            <p>Add toggles like speed, maps, skins, etc.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <h2>FAQ</h2>
-      <div class="faq">
-        <details class="faq-item">
-          <summary>Do I need to download anything?</summary>
-          <p>No — it runs in the browser like a normal website.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Can I play with friends?</summary>
-          <p>If it’s singleplayer, friends can still play at the same time via the link.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>What browsers work?</summary>
-          <p>Chrome / Edge / Firefox usually. If you use special APIs, list them here.</p>
-        </details>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-left">
-        <span class="muted">© <span id="year"></span> Snake Mod</span>
-      </div>
-      <div class="footer-right">
-        <a href="#home">Top</a>
-        <a href="#">Discord</a>
-        <a href="#">GitHub</a>
-      </div>
-    </footer>
+    <a class="button-29" href="v/current/">PLAY</a>
   </main>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Mobile dropdown: click to open/close
-    const dropdown = document.qu
+    const dd = document.querySelector(".thin-dropdown");
+    const btn = document.querySelector(".menu-btn");
+    btn?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dd.classList.toggle("open");
+    });
+    document.addEventListener("click", () => dd?.classList.remove("open"));
+  </script>
+</body>
+</html>
